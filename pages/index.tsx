@@ -1,8 +1,8 @@
-import Benefits from './components/Benefits'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Listing from './components/Listing'
+import Benefits from '../components/Benefits'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import Listing from '../components/Listing'
 
 function Home() {
     return (
