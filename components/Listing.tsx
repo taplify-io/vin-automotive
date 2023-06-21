@@ -36,14 +36,14 @@ function Listing() {
         <section className="max-w-7xl mx-auto w-full px-4 sm:px-6 md:px-8">
             <h2 className="text-3xl font-semibold">Search our database</h2>
 
-            <div className="flex items-center mt-6 bg-[#F2F2F2] gap-2.5 p-2.5 rounded-lg w-[400px]">
+            <div className="flex items-center mt-6 bg-[#F2F2F2] gap-2.5 p-2.5 rounded-lg w-full md:w-[400px]">
                 <MagnifyingGlassIcon className="w-4 h-4" />
                 <input value={searchText} onChange={handleSearchChange} className="bg-transparent outline-none w-full text-sm placeholder:font-light" type="text" placeholder="Search for your car plate" />
             </div>
 
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredPlates.map(({ no, state, price, isAvailable }) => (
-                    <div key={no} className="border border-[#D6D6D6] rounded-3xl p-6 flex justify-between">
+                    <div key={no} className="border border-[#D6D6D6] rounded-3xl p-6 flex justify-between gap-4">
                         <div className="flex flex-col justify-between gap-8">
                             <p className="text-lg md:text-xl lg:text-2xl font-medium">{no}</p>
 
