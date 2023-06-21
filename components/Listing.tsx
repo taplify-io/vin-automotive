@@ -54,7 +54,7 @@ function Listing() {
                         </div>
 
                         <div className="flex flex-col items-end justify-between">
-                            <a href={generateWhatsAppLink('60198248014', `Hello, I would like to inquire on the car plate *${no}*`)} target="_blank" className={clsx(isAvailable ? 'cursor-pointer' : 'cursor-not-allowed')}>
+                            <a href={generateWhatsAppLink('60122697878', `Hello, I would like to inquire on the car plate *${no}*`)} target="_blank" className={clsx(isAvailable ? 'cursor-pointer' : 'cursor-not-allowed')}>
                                 <img className="w-6 h-6 object-cover" src={isAvailable ? '/assets/active-whatsapp.png' : '/assets/inactive-whatsapp.png'} alt="" />
                             </a>
 

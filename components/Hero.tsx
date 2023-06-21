@@ -2,7 +2,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline'
 import { generateWhatsAppLink } from '../lib/whatsapp'
 
 function Hero() {
-    const link = generateWhatsAppLink('60198248014', "I'm interested to know the available car plates.")
+    const link = generateWhatsAppLink('60122697878', "I'm interested to know the available car plates.")
 
     return (
         <section className="relative">

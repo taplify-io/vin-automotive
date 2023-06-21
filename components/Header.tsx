@@ -1,7 +1,7 @@
 import { generateWhatsAppLink } from '../lib/whatsapp'
 
 function Header() {
-    const link = generateWhatsAppLink('60198248014', "I'm interested to know the available car plates.")
+    const link = generateWhatsAppLink('60122697878', "I'm interested to know the available car plates.")
 
     return (
         <header className="bg-white py-6 flex justify-between items-center px-4 sm:px-6 md:px-8 max-w-7xl mx-auto w-full">
