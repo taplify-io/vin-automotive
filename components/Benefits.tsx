@@ -35,7 +35,7 @@ function Benefits() {
                     </div>
                     <div>
                         <p className="text-3xl font-bold">100%</p>
-                        <p className="font-medium text-xs lg:text-base mt-2">Approval Guaranteed</p>
+                        <p className="font-medium text-xs lg:text-base mt-2">Approval Rate</p>
                     </div>
                 </div>
             </div>
