@@ -43,7 +43,7 @@ function Listing() {
 
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filteredPlates.map(({ no, state, price, isAvailable }) => (
-                    <div className="border border-[#D6D6D6] rounded-3xl p-6 flex justify-between">
+                    <div key={no} className="border border-[#D6D6D6] rounded-3xl p-6 flex justify-between">
                         <div className="flex flex-col justify-between gap-8">
                             <p className="text-lg md:text-xl lg:text-2xl font-medium">{no}</p>
 

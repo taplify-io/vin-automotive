@@ -42,7 +42,7 @@ function Benefits() {
 
             <ul className="w-full lg:w-5/12 flex flex-col gap-3">
                 {benefits.map(({ icon, title, description }) => (
-                    <li className="flex items-center bg-[#F5F5F5] p-2 gap-8 rounded-lg">
+                    <li key={title} className="flex items-center bg-[#F5F5F5] p-2 gap-8 rounded-lg">
                         <div className="bg-[#DBDBDB] p-5 w-fit rounded-md">
                             <img className="w-12 h-12 lg:w-16 lg:h-16 text-[#626262]" src={icon} alt="" />
                         </div>
