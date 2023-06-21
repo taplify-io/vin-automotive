@@ -1,6 +1,9 @@
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
+import { generateWhatsAppLink } from '../lib/whatsapp'
 
 function Hero() {
+    const link = generateWhatsAppLink('60198248014', "I'm interested to know the available car plates.")
+
     return (
         <section className="relative">
             <div className="max-w-7xl relative z-10 mx-auto flex items-center px-4 sm:px-6 md:px-8 gap-[50px]">
@@ -15,10 +18,10 @@ function Hero() {
 
                     <p className="text-black/60 mt-6 ">This is just some text, some dummy text for this hero section, Im not sure what to put in this section.</p>
 
-                    <button className="flex group items-center mt-6 gap-2 bg-gradient-to-r to-[#FFD700] via-[#FFC200] from-[#FFA500] rounded-lg py-2.5 px-3">
+                    <a href={link} target="_blank" className="flex w-fit group items-center mt-6 gap-2 bg-gradient-to-r to-[#FFD700] via-[#FFC200] from-[#FFA500] rounded-lg py-2.5 px-3">
                         <span className="text-sm font-medium">Contact our Agent</span>
                         <ArrowRightIcon className="w-3.5 h-3.5 stroke-2 group-hover:rotate-[-30deg] transform transition-all duration-150" />
-                    </button>
+                    </a>
                 </div>
 
                 <div className="hidden md:block">

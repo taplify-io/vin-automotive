@@ -1,6 +1,7 @@
 import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import clsx from 'clsx'
 import { ChangeEventHandler, useState } from 'react'
+import { generateWhatsAppLink } from '../lib/whatsapp'
 
 function Listing() {
     const [plates, setPlates] = useState([
@@ -53,7 +54,9 @@ function Listing() {
                         </div>
 
                         <div className="flex flex-col items-end justify-between">
-                            <img className="w-6 h-6 object-cover" src={isAvailable ? '/assets/active-whatsapp.png' : '/assets/inactive-whatsapp.png'} alt="" />
+                            <a href={generateWhatsAppLink('60198248014', `Hello, I would like to inquire on the car plate *${no}*`)} target="_blank" className={clsx(isAvailable ? 'cursor-pointer' : 'cursor-not-allowed')}>
+                                <img className="w-6 h-6 object-cover" src={isAvailable ? '/assets/active-whatsapp.png' : '/assets/inactive-whatsapp.png'} alt="" />
+                            </a>
 
                             <span className={clsx(isAvailable ? 'text-[#269C6B]' : 'text-[#DA0707]', 'font-medium text-sm lg:text-base')}>{isAvailable ? 'Available' : 'Sold'}</span>
                         </div>
